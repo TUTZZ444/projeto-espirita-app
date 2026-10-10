@@ -1,0 +1,429 @@
+/* =========================
+   PÁGINA
+========================= */
+
+.pagina-pessoas {
+  width: 100%;
+  max-width: 1200px;
+
+  margin: 0 auto;
+
+  padding: 40px 20px 80px;
+
+  color: #f2f3f5;
+}
+
+
+/* =========================
+   VOLTAR
+========================= */
+
+/* =========================
+   VOLTAR
+========================= */
+
+.voltar-pessoas {
+  position: absolute;
+
+  top: 20px;
+  left: 20px;
+
+  display: inline-flex;
+  align-items: center;
+
+  padding: 10px 16px;
+
+  background: #171a1f;
+
+  color: #f2f3f5;
+
+  border: 1px solid #292e36;
+
+  border-radius: 10px;
+
+  text-decoration: none;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.voltar-pessoas:hover {
+  background: #20242a;
+
+  border-color: #3a414b;
+
+  transform: translateX(3px);
+}
+
+.voltar-pessoas:hover {
+  background: #20242a;
+
+  border-color: #3a414b;
+
+  transform: translateX(3px);
+}
+
+
+/* =========================
+   CABEÇALHO
+========================= */
+
+.cabecalho-pessoas {
+  text-align: center;
+
+  margin-bottom: 35px;
+}
+
+.cabecalho-pessoas h1 {
+  margin: 0;
+
+  color: #eef4ff;
+
+  font-size: 42px;
+
+  font-weight: 800;
+}
+
+.cabecalho-pessoas p {
+  margin: 10px 0 0;
+
+  color: #8f9aaa;
+
+  font-size: 17px;
+}
+
+
+/* =========================
+   PESQUISA
+========================= */
+
+.pesquisa-pessoas {
+  position: relative;
+
+  width: 100%;
+  max-width: 650px;
+
+  margin: 0 auto 40px;
+}
+
+.pesquisa-pessoas input {
+  width: 100%;
+
+  padding: 15px 50px 15px 18px;
+
+  background: #171a1f;
+
+  color: #f2f3f5;
+
+  border: 1px solid #292e36;
+
+  border-radius: 12px;
+
+  outline: none;
+
+  font-size: 16px;
+
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.pesquisa-pessoas input::placeholder {
+  color: #777c83;
+}
+
+.pesquisa-pessoas input:focus {
+  border-color: #3a5878;
+
+  box-shadow:
+    0 0 0 3px rgba(58, 88, 120, 0.15);
+}
+
+.pesquisa-pessoas span {
+  position: absolute;
+
+  right: 18px;
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  color: #777c83;
+
+  font-size: 22px;
+
+  pointer-events: none;
+}
+
+
+/* =========================
+   GRID
+========================= */
+
+.grid-pessoas {
+  display: grid;
+
+  grid-template-columns:
+    repeat(auto-fill, minmax(280px, 1fr));
+
+  gap: 20px;
+}
+
+
+/* =========================
+   CARD
+========================= */
+
+.card-pessoa {
+  display: block;
+
+  padding: 24px;
+
+  background: linear-gradient(
+    145deg,
+    #151b24,
+    #11161e
+  );
+
+  color: #f2f3f5;
+
+  border: 1px solid #243247;
+
+  border-radius: 14px;
+
+  text-decoration: none;
+
+  box-shadow:
+    0 4px 14px rgba(0, 0, 0, 0.35);
+
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease,
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.card-pessoa:hover {
+  background: linear-gradient(
+    145deg,
+    #1a2431,
+    #151d27
+  );
+
+  border-color: #35506f;
+
+  transform: translateY(-4px);
+
+  box-shadow:
+    0 10px 24px rgba(0, 0, 0, 0.45);
+}
+
+
+/* =========================
+   NOME ABREVIADO
+========================= */
+
+.card-pessoa h2 {
+  margin: 0 0 22px;
+
+  color: #eef4ff;
+
+  font-size: 24px;
+
+  line-height: 1.25;
+
+  font-weight: 800;
+
+  border-bottom: 1px solid #293544;
+
+  padding-bottom: 16px;
+}
+
+
+/* =========================
+   INFORMAÇÕES
+========================= */
+
+.informacoes-pessoa {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 0;
+}
+
+
+/* =========================
+   CADA INFORMAÇÃO
+========================= */
+
+.informacao-pessoa {
+  display: flex;
+
+  align-items: flex-start;
+
+  justify-content: space-between;
+
+  gap: 15px;
+
+  padding: 11px 0;
+
+  border-bottom: 1px solid #252d38;
+}
+
+.informacao-pessoa:last-child {
+  border-bottom: none;
+}
+
+
+/* =========================
+   NOME DOS CAMPOS
+========================= */
+
+.informacao-pessoa strong {
+  flex-shrink: 0;
+
+  color: #dce9f7;
+
+  font-size: 14px;
+
+  font-weight: 700;
+}
+
+
+/* =========================
+   VALORES
+========================= */
+
+.informacao-pessoa span {
+  min-width: 0;
+
+  color: #9eafc2;
+
+  font-size: 14px;
+
+  line-height: 1.35;
+
+  text-align: right;
+
+  overflow-wrap: anywhere;
+}
+
+
+/* =========================
+   NENHUM RESULTADO
+========================= */
+
+.nenhum-resultado-pessoas {
+  padding: 60px 20px;
+
+  text-align: center;
+}
+
+.nenhum-resultado-pessoas h2 {
+  margin: 0 0 10px;
+
+  color: #dce4ee;
+
+  font-size: 24px;
+}
+
+.nenhum-resultado-pessoas p {
+  margin: 0;
+
+  color: #777f8a;
+
+  font-size: 15px;
+}
+
+
+/* =========================
+   CELULAR
+========================= */
+
+@media (max-width: 650px) {
+
+  .pagina-pessoas {
+    padding: 30px 15px 60px;
+  }
+
+  .cabecalho-pessoas h1 {
+    font-size: 34px;
+  }
+
+  .grid-pessoas {
+    grid-template-columns: 1fr;
+  }
+
+  .card-pessoa {
+    padding: 20px;
+  }
+
+  .informacao-pessoa {
+    flex-direction: column;
+
+    gap: 4px;
+  }
+
+  .informacao-pessoa span {
+    text-align: left;
+  }
+
+}
+
+.contato-pessoa {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+
+.contato-pessoa span {
+  color: #b5bac1;
+}
+
+
+.botao-copiar-pessoa {
+  padding: 7px 11px;
+
+  background: #20252c;
+  color: #dce5ef;
+
+  border: 1px solid #303943;
+  border-radius: 8px;
+
+  font-size: 13px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease;
+}
+
+
+.botao-copiar-pessoa:hover {
+  background: #29313a;
+  border-color: #465362;
+}
+
+
+.botao-copiar-pessoa:active {
+  transform: scale(0.97);
+}
+
+
+@media (max-width: 650px) {
+
+  .contato-pessoa {
+    justify-content: flex-start;
+  }
+
+}

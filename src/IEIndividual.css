@@ -1,0 +1,292 @@
+/* =========================
+   PÁGINA INDIVIDUAL
+========================= */
+
+.pagina-ie-individual {
+  max-width: 1000px;
+
+  margin: 0 auto;
+
+  padding: 40px 20px 80px;
+}
+
+
+/* =========================
+   BOTÃO VOLTAR
+========================= */
+
+.voltar-ie {
+  position: fixed;
+
+  top: 20px;
+  left: 20px;
+
+  display: inline-flex;
+  align-items: center;
+
+  padding: 11px 17px;
+
+  background: #182536;
+
+  color: #e8f1fb;
+
+  border: 1px solid #30465d;
+  border-radius: 10px;
+
+  font-size: 16px;
+  font-weight: 700;
+
+  text-decoration: none;
+
+  box-shadow:
+    0 4px 14px rgba(0, 0, 0, 0.35);
+
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.2s ease;
+
+  z-index: 1000;
+}
+
+
+.voltar-ie:hover {
+  background: #22354b;
+
+  border-color: #466684;
+
+  transform: translateX(3px);
+}
+
+
+/* =========================
+   PERFIL
+========================= */
+
+.perfil-ie {
+  margin-top: 45px;
+
+  padding: 35px;
+
+  background: linear-gradient(
+    145deg,
+    #151e29,
+    #111820
+  );
+
+  border: 1px solid #26384d;
+  border-radius: 18px;
+
+  box-shadow:
+    0 6px 20px rgba(0, 0, 0, 0.35);
+}
+
+
+/* =========================
+   NOME
+========================= */
+
+.perfil-ie h1 {
+  margin: 0;
+
+  color: #eef4ff;
+
+  font-size: 38px;
+  line-height: 1.2;
+
+  font-weight: 800;
+
+  text-align: center;
+}
+
+
+/* =========================
+   SIGLA
+========================= */
+
+.sigla-ie-individual {
+  width: fit-content;
+
+  margin: 15px auto 35px;
+
+  padding: 7px 13px;
+
+  background: #1d3144;
+
+  color: #a9c8e5;
+
+  border: 1px solid #31506d;
+  border-radius: 9px;
+
+  font-size: 16px;
+  font-weight: 800;
+}
+
+
+/* =========================
+   INFORMAÇÕES
+========================= */
+
+.informacoes-ie {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 0;
+}
+
+
+/* =========================
+   CADA INFORMAÇÃO
+========================= */
+
+.informacao-ie {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 30px;
+
+  padding: 17px 0;
+
+  border-bottom: 1px solid #293440;
+}
+
+
+.informacao-ie:last-child {
+  border-bottom: none;
+}
+
+
+/* =========================
+   NOME DO CAMPO
+========================= */
+
+.informacao-ie strong {
+  flex-shrink: 0;
+
+  color: #dce9f7;
+
+  font-size: 17px;
+  font-weight: 800;
+}
+
+
+/* =========================
+   VALOR
+========================= */
+
+.informacao-ie span {
+  color: #aebed1;
+
+  font-size: 17px;
+
+  text-align: right;
+
+  overflow-wrap: anywhere;
+}
+
+
+/* =========================
+   NÃO ENCONTRADO
+========================= */
+
+.ie-nao-encontrado {
+  margin-top: 100px;
+
+  text-align: center;
+}
+
+
+.ie-nao-encontrado h1 {
+  color: #eef4ff;
+
+  font-size: 34px;
+}
+
+
+.ie-nao-encontrado p {
+  color: #858f9b;
+
+  font-size: 18px;
+}
+
+
+/* =========================
+   CELULAR
+========================= */
+
+@media (max-width: 650px) {
+
+  .pagina-ie-individual {
+    padding: 30px 15px 60px;
+  }
+
+
+  .perfil-ie {
+    margin-top: 55px;
+
+    padding: 25px 20px;
+  }
+
+
+  .perfil-ie h1 {
+    font-size: 29px;
+  }
+
+
+  .informacao-ie {
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 7px;
+  }
+
+
+  .informacao-ie span {
+    text-align: left;
+
+    font-size: 16px;
+  }
+
+}
+
+.maps-link-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.maps-link {
+  color: #79aee8;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.maps-link:hover {
+  text-decoration: underline;
+}
+
+.botao-copiar {
+  padding: 7px 12px;
+
+  background: #202830;
+  color: #dce9f7;
+
+  border: 1px solid #344454;
+  border-radius: 8px;
+
+  font-size: 13px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+.botao-copiar:hover {
+  background: #293541;
+}

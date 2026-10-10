@@ -1,0 +1,223 @@
+.pagina-eventos {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 90px 20px 50px;
+}
+
+.pagina-eventos h1 {
+  text-align: center;
+  font-size: 42px;
+  margin-bottom: 40px;
+}
+
+.grid-eventos {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(280px, 1fr)
+  );
+  gap: 20px;
+}
+
+.card-evento {
+  display: block;
+
+  padding: 25px;
+
+  background: linear-gradient(
+    145deg,
+    #182235,
+    #111923
+  );
+
+  border: 1px solid #293d59;
+  border-radius: 16px;
+
+  color: #f2f3f5;
+  text-decoration: none;
+
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease,
+    background 0.2s ease;
+}
+
+.card-evento:hover {
+  transform: translateY(-5px);
+
+  border-color: #41678f;
+
+  background: linear-gradient(
+    145deg,
+    #1d2b40,
+    #151f2c
+  );
+}
+
+.card-evento h2 {
+  margin: 0 0 20px;
+
+  font-size: 25px;
+  font-weight: 800;
+}
+
+.card-evento p {
+  margin: 10px 0;
+
+  color: #aebed1;
+
+  font-size: 16px;
+}
+
+.card-evento strong {
+  color: #dce9f7;
+}
+
+.abrir-evento {
+  display: block;
+
+  margin-top: 22px;
+
+  color: #80b5e8;
+
+  font-size: 15px;
+  font-weight: 700;
+}
+
+/* =========================
+   VER DETALHES
+========================= */
+
+.ver-detalhes {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 20px;
+  padding: 10px 18px;
+
+  background-color: #1d2b3d;
+  color: #bcd4ed;
+
+  border: 1px solid #304863;
+  border-radius: 9px;
+
+  font-size: 15px;
+  line-height: 1;
+
+  font-weight: 800;
+
+  text-decoration: none;
+
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.card-evento:hover .ver-detalhes {
+  background-color: #263b53;
+  border-color: #41617f;
+
+  transform: translateX(3px);
+}
+
+/* =========================
+   MODALIDADE
+========================= */
+
+.evento-modalidade {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+
+  gap: 8px;
+
+  margin-top: 18px;
+}
+
+
+/* PRESENCIAL */
+
+.evento-modalidade .presencial {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 8px 13px;
+
+  background: #173126;
+
+  color: #9ed6b8;
+
+  border: 1px solid #315c47;
+  border-radius: 8px;
+
+  font-size: 14px;
+  font-weight: 800;
+
+  line-height: 1;
+}
+
+
+/* ONLINE */
+
+.evento-modalidade .online {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 8px 13px;
+
+  background: #192d43;
+
+  color: #a7ccef;
+
+  border: 1px solid #355475;
+  border-radius: 8px;
+
+  font-size: 14px;
+  font-weight: 800;
+
+  line-height: 1;
+}
+
+
+/* =========================
+   VER DETALHES
+========================= */
+
+.ver-detalhes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: fit-content;
+
+  margin-top: 20px;
+
+  padding: 10px 17px;
+
+  background: #1b2a3c;
+
+  color: #d8e8f7;
+
+  border: 1px solid #304a66;
+  border-radius: 9px;
+
+  font-size: 15px;
+  font-weight: 800;
+
+  line-height: 1;
+
+  transition: 0.2s ease;
+}
+
+
+.card-evento:hover .ver-detalhes {
+  background: #253b53;
+
+  border-color: #456789;
+
+  transform: translateX(3px);
+}

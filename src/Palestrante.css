@@ -1,0 +1,513 @@
+/* =========================
+   PÁGINA
+========================= */
+
+.pagina-palestrante {
+  max-width: 1200px;
+
+  margin: 0 auto;
+
+  padding: 40px 20px 80px;
+}
+
+
+/* =========================
+   BOTÃO VOLTAR
+========================= */
+
+.voltar {
+  position: fixed;
+
+  top: 20px;
+  left: 20px;
+
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  padding: 10px 16px;
+
+  background-color: #171e27;
+
+  color: #f2f3f5;
+
+  border: 1px solid #29384a;
+
+  border-radius: 10px;
+
+  font-size: 15px;
+
+  font-weight: 600;
+
+  text-decoration: none;
+
+  box-shadow:
+    0 4px 12px rgba(0, 0, 0, 0.35);
+
+  transition: all 0.2s ease;
+
+  z-index: 1000;
+}
+
+.voltar:hover {
+  background-color: #202d3b;
+
+  border-color: #3a5878;
+
+  transform: translateX(3px);
+
+  box-shadow:
+    0 6px 16px rgba(0, 0, 0, 0.45);
+}
+
+
+/* =========================
+   PERFIL
+========================= */
+
+.perfil {
+  margin-top: 30px;
+
+  padding: 30px;
+
+  background: #171d25;
+
+  border: 1px solid #26384d;
+
+  border-radius: 16px;
+
+  box-shadow:
+    0 4px 15px rgba(0, 0, 0, 0.25);
+}
+
+.perfil h1 {
+  margin-top: 0;
+
+  margin-bottom: 30px;
+
+  color: #ffffff;
+
+  font-size: 36px;
+
+  font-weight: 800;
+}
+
+
+/* =========================
+   INFORMAÇÕES
+========================= */
+
+.informacoes {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 0;
+}
+
+.informacao {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  padding: 14px 0;
+
+  border-bottom: 1px solid #252f3a;
+}
+
+.informacao:last-child {
+  border-bottom: none;
+}
+
+.informacao strong {
+  color: #ffffff;
+}
+
+.informacao span {
+  color: #b5bac1;
+
+  text-align: right;
+}
+
+
+/* =========================
+   AGENDA
+========================= */
+
+.agenda {
+  width: 100%;
+  max-width: 1200px;
+
+  margin: 45px auto 0;
+
+  padding: 28px;
+
+  background: #11161e;
+
+  border: 1px solid #2a3b50;
+  border-radius: 18px;
+
+  box-shadow:
+    0 6px 20px rgba(0, 0, 0, 0.35);
+}
+
+
+/* TÍTULO */
+
+.agenda h2 {
+  margin: 0 0 25px;
+
+  color: #eef4ff;
+
+  font-size: 36px;
+  font-weight: 800;
+
+  text-align: center;
+}
+
+
+/* =========================
+   DIAS
+========================= */
+
+.agenda-lista {
+  display: grid;
+
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+
+  width: 100%;
+
+  gap: 0;
+
+  overflow: hidden;
+
+  border: 1px solid #2a3b50;
+  border-radius: 12px;
+}
+
+
+/* =========================
+   CADA DIA
+========================= */
+
+.agenda-dia {
+  width: 100%;
+
+  overflow: hidden;
+
+  background: #11171f;
+
+  border: none;
+  border-right: 1px solid #2a3b50;
+}
+
+
+/* Remove a borda do último dia */
+
+.agenda-dia:last-child {
+  border-right: none;
+}
+
+
+/* =========================
+   NOME DO DIA
+========================= */
+
+.agenda-dia > h3 {
+  height: 62px;
+  min-height: 62px;
+
+  margin: 0;
+  padding: 8px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #1a293b;
+
+  color: #eef4ff;
+
+  font-size: 19px;
+  line-height: 1.15;
+
+  font-weight: 800;
+
+  text-align: center;
+
+  border-bottom: 1px solid #2a3b50;
+}
+
+
+/* =========================
+   HORÁRIOS
+========================= */
+
+.agenda-horarios {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+
+  margin: 0;
+  padding: 0;
+}
+
+
+/* =========================
+   HORÁRIO
+========================= */
+
+.horario {
+  width: 100%;
+
+  height: 85px;
+  min-height: 85px;
+
+  padding: 10px 5px;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+
+  border: none;
+  border-bottom: 1px solid #2a3b50;
+  border-radius: 0;
+
+  background: #151b24;
+
+  box-sizing: border-box;
+}
+
+
+/* Último horário */
+
+.horario:last-child {
+  border-bottom: none;
+}
+
+
+/* =========================
+   TEXTO
+========================= */
+
+.horario strong {
+  margin: 0 0 6px;
+
+  color: #dce9f7;
+
+  font-size: 16px;
+  line-height: 1.2;
+
+  font-weight: 800;
+
+  white-space: nowrap;
+}
+
+.horario span {
+  margin: 0;
+
+  font-size: 13px;
+  line-height: 1.2;
+
+  font-weight: 700;
+
+  white-space: nowrap;
+}
+
+
+/* =========================
+   DISPONÍVEL
+========================= */
+
+.horario.disponivel {
+  background: #18312e;
+}
+
+.horario.disponivel strong {
+  color: #e1f5ec;
+}
+
+.horario.disponivel span {
+  color: #7ed3ae;
+}
+
+
+/* =========================
+   INDISPONÍVEL
+========================= */
+
+.horario.indisponivel {
+  background: #12171d;
+}
+
+.horario.indisponivel strong {
+  color: #59616b;
+}
+
+.horario.indisponivel span {
+  color: #454d57;
+}
+
+
+/* =========================
+   HOVER
+========================= */
+
+.horario.disponivel:hover {
+  background: #1d3935;
+
+  cursor: pointer;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 1000px) {
+
+  .agenda {
+    padding: 20px;
+  }
+
+  .agenda-lista {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+
+    border-radius: 12px;
+  }
+
+  .agenda-dia {
+    border-right: 1px solid #2a3b50;
+    border-bottom: 1px solid #2a3b50;
+  }
+
+}
+
+
+/* =========================
+   CELULAR
+========================= */
+
+@media (max-width: 650px) {
+
+  .agenda {
+    padding: 15px;
+  }
+
+  .agenda-lista {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+}
+
+
+/* =========================
+   CELULAR PEQUENO
+========================= */
+
+@media (max-width: 400px) {
+
+  .agenda-lista {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+/* =========================
+   TELEFONE
+========================= */
+
+.telefone {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 12px;
+}
+
+.telefone span {
+  text-align: right;
+}
+
+.botao-copiar {
+  padding: 7px 12px;
+
+  background: #1c2a39;
+  color: #c9d9e8;
+
+  border: 1px solid #30465d;
+  border-radius: 8px;
+
+  font-size: 14px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  white-space: nowrap;
+
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.1s ease;
+}
+
+.botao-copiar:hover {
+  background: #263b50;
+  border-color: #42617f;
+}
+
+.botao-copiar:active {
+  transform: scale(0.96);
+}
+
+/* =========================
+   BOTÃO PÁGINA INICIAL
+========================= */
+
+.voltar-inicio {
+  position: fixed;
+
+  top: 20px;
+  left: 20px;
+
+  display: inline-flex;
+  align-items: center;
+
+  padding: 11px 17px;
+
+  background: #182536;
+
+  color: #e8f1fb;
+
+  border: 1px solid #30465d;
+  border-radius: 10px;
+
+  font-size: 16px;
+  font-weight: 700;
+
+  text-decoration: none;
+
+  box-shadow:
+    0 4px 14px rgba(0, 0, 0, 0.35);
+
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.voltar-inicio:hover {
+  background: #22354b;
+
+  border-color: #466684;
+
+  transform: translateX(3px);
+}

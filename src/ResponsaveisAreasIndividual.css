@@ -1,0 +1,224 @@
+.pagina-responsavel-individual {
+
+  min-height: 100vh;
+
+  padding: 80px 20px 60px;
+
+  background-color: #0d0f12;
+
+  color: #f2f3f5;
+
+}
+
+
+.detalhes-responsavel {
+
+  width: 100%;
+
+  max-width: 900px;
+
+  margin: 30px auto 0;
+
+  padding: 35px;
+
+  background: #171a1f;
+
+  border: 1px solid #252d38;
+
+  border-radius: 16px;
+
+  box-shadow:
+    0 5px 20px
+    rgba(0, 0, 0, 0.35);
+
+}
+
+
+.detalhes-responsavel h1 {
+
+  margin: 0 0 35px;
+
+  color: #ffffff;
+
+  font-size: 36px;
+
+  font-weight: 800;
+
+}
+
+
+.informacoes-responsavel {
+
+  display: flex;
+
+  flex-direction: column;
+
+}
+
+
+.informacao-responsavel {
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 30px;
+
+  padding: 16px 0;
+
+  border-bottom: 1px solid #252930;
+
+}
+
+
+.informacao-responsavel:last-child {
+
+  border-bottom: none;
+
+}
+
+
+.informacao-responsavel > strong {
+
+  color: #ffffff;
+
+  font-size: 16px;
+
+  font-weight: 800;
+
+}
+
+
+.informacao-responsavel > span {
+
+  color: #b5bac1;
+
+  text-align: right;
+
+}
+
+
+.contato-responsavel {
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: flex-end;
+
+  gap: 10px;
+
+}
+
+
+.contato-responsavel span {
+
+  color: #b5bac1;
+
+}
+
+
+.botao-copiar-responsavel {
+
+  padding: 7px 11px;
+
+  background: #20252c;
+
+  color: #dce5ef;
+
+  border: 1px solid #303943;
+
+  border-radius: 8px;
+
+  font-size: 13px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+}
+
+
+.botao-copiar-responsavel:hover {
+
+  background: #29313a;
+
+  border-color: #465362;
+
+}
+
+
+.responsavel-nao-encontrado {
+
+  max-width: 700px;
+
+  margin: 80px auto;
+
+  padding: 35px;
+
+  text-align: center;
+
+  background: #171a1f;
+
+  border: 1px solid #252d38;
+
+  border-radius: 16px;
+
+}
+
+
+@media (max-width: 650px) {
+
+  .pagina-responsavel-individual {
+
+    padding:
+      75px
+      15px
+      40px;
+
+  }
+
+
+  .detalhes-responsavel {
+
+    padding: 25px 20px;
+
+  }
+
+
+  .detalhes-responsavel h1 {
+
+    font-size: 28px;
+
+  }
+
+
+  .informacao-responsavel {
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 8px;
+
+  }
+
+
+  .informacao-responsavel > span {
+
+    text-align: left;
+
+  }
+
+
+  .contato-responsavel {
+
+    justify-content: flex-start;
+
+    flex-wrap: wrap;
+
+  }
+
+}

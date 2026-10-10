@@ -1,0 +1,359 @@
+/* =========================
+   PÁGINA
+========================= */
+
+.pagina-publica-individual {
+
+  min-height: 100vh;
+
+  padding: 80px 20px 60px;
+
+  background-color: #0d0f12;
+
+  color: #f2f3f5;
+
+}
+
+
+/* =========================
+   QUADRADO PRINCIPAL
+========================= */
+
+.detalhes-publica {
+
+  width: 100%;
+
+  max-width: 900px;
+
+  margin: 30px auto 0;
+
+  padding: 35px;
+
+  background: #171a1f;
+
+  border: 1px solid #252d38;
+
+  border-radius: 16px;
+
+  box-shadow:
+    0 5px 20px rgba(
+      0,
+      0,
+      0,
+      0.35
+    );
+
+}
+
+
+/* =========================
+   TÍTULO
+========================= */
+
+.detalhes-publica h1 {
+
+  margin: 0 0 35px;
+
+  color: #ffffff;
+
+  font-size: 36px;
+
+  font-weight: 800;
+
+  line-height: 1.2;
+
+}
+
+
+/* =========================
+   INFORMAÇÕES
+========================= */
+
+.informacoes-publica {
+
+  display: flex;
+
+  flex-direction: column;
+
+}
+
+
+/* =========================
+   CADA TÓPICO
+========================= */
+
+.informacao-publica {
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 30px;
+
+  padding: 16px 0;
+
+  border-bottom: 1px solid #252930;
+
+}
+
+
+.informacao-publica:last-child {
+
+  border-bottom: none;
+
+}
+
+
+.informacao-publica > strong {
+
+  flex-shrink: 0;
+
+  color: #ffffff;
+
+  font-size: 16px;
+
+  font-weight: 800;
+
+}
+
+
+.informacao-publica > span {
+
+  color: #b5bac1;
+
+  text-align: right;
+
+  line-height: 1.5;
+
+}
+
+
+/* =========================
+   CONTATO
+========================= */
+
+.contato-publica {
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: flex-end;
+
+  gap: 6px;
+
+}
+
+
+.contato-publica > span {
+
+  color: #b5bac1;
+
+  text-align: right;
+
+  line-height: 1.4;
+
+}
+
+
+/* =========================
+   TELEFONE
+========================= */
+
+.telefone-publica {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+}
+
+
+.telefone-publica span {
+
+  color: #9da5af;
+
+  font-size: 16px;
+
+}
+
+
+/* =========================
+   BOTÃO COPIAR
+========================= */
+
+.botao-copiar-publica {
+
+  padding: 7px 11px;
+
+  background-color: #20252c;
+
+  color: #dce5ef;
+
+  border: 1px solid #303943;
+
+  border-radius: 8px;
+
+  font-size: 13px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease;
+
+}
+
+
+.botao-copiar-publica:hover {
+
+  background-color: #29313a;
+
+  border-color: #465362;
+
+}
+
+
+/* =========================
+   OBSERVAÇÕES
+========================= */
+
+.observacoes-publica {
+
+  align-items: flex-start;
+
+}
+
+
+.observacoes-publica > span {
+
+  max-width: 65%;
+
+}
+
+
+/* =========================
+   NÃO ENCONTRADA
+========================= */
+
+.publica-nao-encontrada {
+
+  max-width: 700px;
+
+  margin: 80px auto;
+
+  padding: 35px;
+
+  text-align: center;
+
+  background: #171a1f;
+
+  border: 1px solid #252d38;
+
+  border-radius: 16px;
+
+}
+
+
+.publica-nao-encontrada h1 {
+
+  margin-top: 0;
+
+}
+
+
+.publica-nao-encontrada p {
+
+  color: #9299a2;
+
+}
+
+
+/* =========================
+   CELULAR
+========================= */
+
+@media (max-width: 650px) {
+
+  .pagina-publica-individual {
+
+    padding:
+      75px
+      15px
+      40px;
+
+  }
+
+
+  .detalhes-publica {
+
+    padding:
+      25px
+      20px;
+
+  }
+
+
+  .detalhes-publica h1 {
+
+    font-size: 28px;
+
+    margin-bottom: 25px;
+
+  }
+
+
+  .informacao-publica {
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 8px;
+
+  }
+
+
+  .informacao-publica > span {
+
+    text-align: left;
+
+  }
+
+
+  .contato-publica {
+
+    align-items: flex-start;
+
+  }
+
+
+  .contato-publica > span {
+
+    text-align: left;
+
+  }
+
+
+  .telefone-publica {
+
+    justify-content: flex-start;
+
+    flex-wrap: wrap;
+
+  }
+
+
+  .observacoes-publica > span {
+
+    max-width: 100%;
+
+  }
+
+}

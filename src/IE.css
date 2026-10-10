@@ -1,0 +1,321 @@
+/* =========================
+   PÁGINA IE
+========================= */
+
+.pagina-ie {
+  max-width: 1200px;
+
+  margin: 0 auto;
+
+  padding: 40px 20px 80px;
+}
+
+
+.pagina-ie h1 {
+  margin-bottom: 40px;
+
+  color: #eef4ff;
+
+  font-size: 42px;
+  font-weight: 800;
+
+  text-align: center;
+}
+
+
+/* =========================
+   VOLTAR
+========================= */
+
+.voltar-inicio {
+  position: fixed;
+
+  top: 20px;
+  left: 20px;
+
+  display: inline-flex;
+  align-items: center;
+
+  padding: 11px 17px;
+
+  background: #182536;
+
+  color: #e8f1fb;
+
+  border: 1px solid #30465d;
+  border-radius: 10px;
+
+  font-size: 16px;
+  font-weight: 700;
+
+  text-decoration: none;
+
+  box-shadow:
+    0 4px 14px rgba(0, 0, 0, 0.35);
+
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.2s ease;
+
+  z-index: 1000;
+}
+
+
+.voltar-inicio:hover {
+  background: #22354b;
+
+  border-color: #466684;
+
+  transform: translateX(3px);
+}
+
+
+/* =========================
+   PESQUISA
+========================= */
+
+.pesquisa-ie-container {
+  position: relative;
+
+  width: 100%;
+  max-width: 650px;
+
+  margin: 0 auto 35px;
+}
+
+
+.pesquisa-ie {
+  width: 100%;
+
+  padding: 15px 52px 15px 18px;
+
+  background-color: #171e27;
+
+  color: #f2f3f5;
+
+  border: 1px solid #293b50;
+  border-radius: 12px;
+
+  font-size: 17px;
+
+  outline: none;
+
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+
+.pesquisa-ie::placeholder {
+  color: #7d8793;
+}
+
+
+.pesquisa-ie:focus {
+  border-color: #416181;
+
+  box-shadow:
+    0 0 0 3px rgba(65, 97, 129, 0.15);
+}
+
+
+/* =========================
+   LUPA
+========================= */
+
+.icone-pesquisa-ie {
+  position: absolute;
+
+  right: 18px;
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  color: #8fa2b8;
+
+  font-size: 24px;
+
+  pointer-events: none;
+}
+
+
+/* =========================
+   GRID
+========================= */
+
+.grid-ie {
+  display: grid;
+
+  grid-template-columns:
+    repeat(auto-fill, minmax(300px, 1fr));
+
+  gap: 20px;
+}
+
+
+/* =========================
+   CARD
+========================= */
+
+.card-ie {
+  display: block;
+
+  padding: 24px;
+
+  background: linear-gradient(
+    145deg,
+    #151e29,
+    #111820
+  );
+
+  color: #f2f3f5;
+
+  border: 1px solid #26384d;
+  border-radius: 14px;
+
+  text-decoration: none;
+
+  box-shadow:
+    0 4px 14px rgba(0, 0, 0, 0.35);
+
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease,
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+
+.card-ie:hover {
+  background: linear-gradient(
+    145deg,
+    #1b2938,
+    #15212c
+  );
+
+  border-color: #3b5875;
+
+  transform: translateY(-4px);
+
+  box-shadow:
+    0 10px 24px rgba(0, 0, 0, 0.45);
+}
+
+
+/* =========================
+   TOPO DO CARD
+========================= */
+
+.card-ie-topo {
+  display: flex;
+
+  align-items: flex-start;
+  justify-content: space-between;
+
+  gap: 15px;
+
+  margin-bottom: 18px;
+}
+
+
+.card-ie h2 {
+  margin: 0;
+
+  color: #eef4ff;
+
+  font-size: 23px;
+  line-height: 1.25;
+
+  font-weight: 800;
+}
+
+
+/* =========================
+   SIGLA
+========================= */
+
+.sigla-ie {
+  flex-shrink: 0;
+
+  padding: 6px 9px;
+
+  background: #1d3144;
+
+  color: #a9c8e5;
+
+  border: 1px solid #31506d;
+  border-radius: 8px;
+
+  font-size: 13px;
+  font-weight: 800;
+}
+
+
+/* =========================
+   INFORMAÇÕES
+========================= */
+
+.card-ie p {
+  margin: 9px 0;
+
+  color: #aebed1;
+
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+
+.card-ie strong {
+  color: #dce9f7;
+}
+
+
+.endereco-card-ie {
+  margin-top: 15px !important;
+
+  color: #8596a9 !important;
+
+  font-size: 15px !important;
+}
+
+
+/* =========================
+   NENHUM RESULTADO
+========================= */
+
+.nenhum-resultado-ie {
+  margin-top: 40px;
+
+  color: #777f89;
+
+  font-size: 18px;
+
+  text-align: center;
+}
+
+
+/* =========================
+   CELULAR
+========================= */
+
+@media (max-width: 650px) {
+
+  .pagina-ie {
+    padding: 35px 15px 60px;
+  }
+
+  .pagina-ie h1 {
+    margin-top: 50px;
+
+    font-size: 32px;
+  }
+
+  .grid-ie {
+    grid-template-columns: 1fr;
+  }
+
+  .card-ie-topo {
+    flex-direction: column;
+  }
+}

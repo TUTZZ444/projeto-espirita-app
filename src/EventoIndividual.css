@@ -1,0 +1,163 @@
+/* =========================
+   PÁGINA DO EVENTO
+========================= */
+
+.pagina-evento-individual {
+  min-height: 100vh;
+
+  width: 100%;
+
+  box-sizing: border-box;
+
+  padding: 90px 20px 70px;
+
+  background-color: #0d0f12;
+
+  color: #f2f3f5;
+}
+
+
+/* =========================
+   CARD DO EVENTO
+========================= */
+
+.evento-detalhes {
+  width: 100%;
+  max-width: 900px;
+
+  margin: 0 auto;
+
+  padding: 40px;
+
+  background: linear-gradient(
+    145deg,
+    #151b24,
+    #11161e
+  );
+
+  border: 1px solid #26384d;
+
+  border-radius: 18px;
+
+  box-shadow:
+    0 8px 25px rgba(0, 0, 0, 0.4);
+}
+
+
+/* =========================
+   TÍTULO
+========================= */
+
+.evento-detalhes h1 {
+  margin: 0 0 35px;
+
+  color: #eef4ff;
+
+  font-size: 42px;
+
+  line-height: 1.2;
+
+  font-weight: 800;
+
+  text-align: center;
+}
+
+
+/* =========================
+   INFORMAÇÕES
+========================= */
+
+.evento-info {
+  padding: 20px 0;
+
+  border-bottom: 1px solid #26303c;
+}
+
+.evento-info:last-child {
+  border-bottom: none;
+}
+
+
+/* TÍTULO DA INFORMAÇÃO */
+
+.evento-info strong {
+  display: block;
+
+  margin-bottom: 8px;
+
+  color: #bcd4ed;
+
+  font-size: 19px;
+
+  font-weight: 800;
+}
+
+
+/* TEXTO */
+
+.evento-info p {
+  margin: 0;
+
+  color: #d5dce5;
+
+  font-size: 18px;
+
+  line-height: 1.5;
+
+  font-weight: 600;
+}
+
+
+/* =========================
+   DESCRIÇÃO
+========================= */
+
+.evento-info:first-of-type p {
+  color: #c5ced9;
+
+  font-size: 19px;
+
+  line-height: 1.6;
+}
+
+
+/* =========================
+   CELULAR
+========================= */
+
+@media (max-width: 650px) {
+
+  .pagina-evento-individual {
+    padding: 80px 15px 50px;
+  }
+
+
+  .evento-detalhes {
+    padding: 25px 20px;
+
+    border-radius: 14px;
+  }
+
+
+  .evento-detalhes h1 {
+    font-size: 32px;
+
+    margin-bottom: 25px;
+  }
+
+
+  .evento-info {
+    padding: 16px 0;
+  }
+
+
+  .evento-info strong {
+    font-size: 17px;
+  }
+
+
+  .evento-info p {
+    font-size: 16px;
+  }
+
+}

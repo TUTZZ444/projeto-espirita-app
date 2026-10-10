@@ -1,0 +1,266 @@
+/* =========================
+   PÁGINA
+========================= */
+
+.pagina-areas {
+  min-height: 100vh;
+  width: 100%;
+
+  box-sizing: border-box;
+
+  padding: 80px 30px;
+
+  background-color: #0b0e11;
+  color: #f2f3f5;
+}
+
+
+/* =========================
+   BOTÃO VOLTAR
+========================= */
+
+.voltar-areas {
+  position: fixed;
+
+  top: 20px;
+  left: 20px;
+
+  display: inline-flex;
+  align-items: center;
+
+  padding: 11px 17px;
+
+  background-color: #171a1f;
+  color: #f2f3f5;
+
+  border: 1px solid #292e36;
+  border-radius: 10px;
+
+  font-size: 15px;
+  font-weight: 700;
+
+  text-decoration: none;
+
+  box-shadow:
+    0 4px 12px rgba(0, 0, 0, 0.35);
+
+  transition:
+    0.2s ease;
+
+  z-index: 1000;
+}
+
+.voltar-areas:hover {
+  background-color: #20242a;
+
+  border-color: #3a414b;
+
+  transform: translateX(3px);
+}
+
+
+/* =========================
+   CABEÇALHO
+========================= */
+
+.areas-cabecalho {
+  width: 100%;
+  max-width: 1100px;
+
+  margin: 0 auto 50px;
+
+  text-align: center;
+}
+
+.areas-cabecalho h1 {
+  margin: 0;
+
+  font-size: 60px;
+
+  line-height: 1.2;
+
+  font-weight: 800;
+
+  letter-spacing: -1px;
+}
+
+.areas-cabecalho p {
+  margin: 15px 0 0;
+
+  color: #9aa2ad;
+
+  font-size: 24px;
+
+  line-height: 1.4;
+
+  font-weight: 700;
+}
+
+
+/* =========================
+   GRID
+========================= */
+
+.grid-areas {
+  width: 100%;
+  max-width: 1100px;
+
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+
+  gap: 20px;
+}
+
+
+/* =========================
+   CARD
+========================= */
+
+.card-area {
+  min-height: 170px;
+
+  padding: 28px 30px;
+
+  box-sizing: border-box;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+  text-align: center;
+
+  background: linear-gradient(
+    145deg,
+    #151b24,
+    #11161e
+  );
+
+  border: 1px solid #243247;
+
+  border-radius: 16px;
+
+  box-shadow:
+    0 4px 14px rgba(0, 0, 0, 0.35);
+
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease,
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+
+/* =========================
+   HOVER
+========================= */
+
+.card-area:hover {
+  background: linear-gradient(
+    145deg,
+    #1a2431,
+    #151d27
+  );
+
+  border-color: #35506f;
+
+  transform: translateY(-4px);
+
+  box-shadow:
+    0 10px 24px rgba(0, 0, 0, 0.45);
+}
+
+
+/* =========================
+   SIGLA
+========================= */
+
+.sigla-area {
+  margin-bottom: 12px;
+
+  color: #79aee8;
+
+  font-size: 21px;
+
+  font-weight: 800;
+
+  letter-spacing: 0.5px;
+}
+
+
+/* =========================
+   NOME
+========================= */
+
+.card-area h2 {
+  margin: 0;
+
+  color: #eef4ff;
+
+  font-size: 28px;
+
+  line-height: 1.25;
+
+  font-weight: 800;
+
+  text-align: center;
+}
+
+
+/* =========================
+   CELULAR
+========================= */
+
+@media (max-width: 700px) {
+
+  .pagina-areas {
+    padding: 70px 20px 50px;
+  }
+
+
+  .areas-cabecalho {
+    margin-bottom: 35px;
+  }
+
+
+  .areas-cabecalho h1 {
+    font-size: 44px;
+  }
+
+
+  .areas-cabecalho p {
+    font-size: 19px;
+  }
+
+
+  .grid-areas {
+    grid-template-columns: 1fr;
+
+    gap: 16px;
+  }
+
+
+  .card-area {
+    min-height: 145px;
+
+    padding: 25px 20px;
+  }
+
+
+  .card-area h2 {
+    font-size: 24px;
+  }
+
+
+  .sigla-area {
+    font-size: 19px;
+  }
+
+}

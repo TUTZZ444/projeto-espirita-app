@@ -1,0 +1,212 @@
+/* =========================
+   PÁGINA DE PALESTRANTES
+========================= */
+
+.pagina-palestrantes {
+  max-width: 1200px;
+
+  margin: 0 auto;
+
+  padding: 40px 20px;
+}
+
+.pagina-palestrantes h1 {
+  text-align: center;
+
+  margin-bottom: 40px;
+
+  color: #eef4ff;
+
+  font-size: 40px;
+
+  font-weight: 800;
+}
+
+
+/* =========================
+   PESQUISA
+========================= */
+
+.pesquisa-container {
+  position: relative;
+
+  width: 100%;
+  max-width: 600px;
+
+  margin: 0 auto 30px;
+}
+
+.pesquisa {
+  width: 100%;
+
+  padding: 14px 50px 14px 18px;
+
+  background-color: #171a1f;
+
+  color: #f2f3f5;
+
+  border: 1px solid #29384a;
+
+  border-radius: 12px;
+
+  font-size: 16px;
+
+  outline: none;
+
+  transition: 0.2s;
+}
+
+.pesquisa::placeholder {
+  color: #777c83;
+}
+
+.pesquisa:focus {
+  border-color: #3a5878;
+
+  box-shadow:
+    0 0 0 3px rgba(60, 100, 140, 0.15);
+}
+
+
+/* =========================
+   LUPA
+========================= */
+
+.icone-pesquisa {
+  position: absolute;
+
+  right: 18px;
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  color: #8a9bad;
+
+  font-size: 25px;
+
+  line-height: 1;
+
+  pointer-events: none;
+}
+
+
+/* =========================
+   GRID
+========================= */
+
+.grid-palestrantes {
+  display: grid;
+
+  grid-template-columns:
+    repeat(auto-fill, minmax(260px, 1fr));
+
+  gap: 20px;
+}
+
+
+/* =========================
+   CARD
+========================= */
+
+.card-palestrante {
+  display: block;
+
+  padding: 24px;
+
+  background: linear-gradient(
+    145deg,
+    #151e29,
+    #111820
+  );
+
+  color: #f2f3f5;
+
+  border: 1px solid #26384d;
+
+  border-radius: 14px;
+
+  text-decoration: none;
+
+  box-shadow:
+    0 4px 14px rgba(0, 0, 0, 0.35);
+
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease,
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.card-palestrante:hover {
+  background: linear-gradient(
+    145deg,
+    #1b2938,
+    #15212c
+  );
+
+  border-color: #3b5875;
+
+  transform: translateY(-4px);
+
+  box-shadow:
+    0 10px 24px rgba(0, 0, 0, 0.45);
+}
+
+.card-palestrante h2 {
+  margin-top: 0;
+
+  margin-bottom: 18px;
+
+  color: #eef4ff;
+
+  font-size: 24px;
+
+  font-weight: 800;
+}
+
+.card-palestrante p {
+  margin: 8px 0;
+
+  color: #aebed1;
+
+  font-size: 16px;
+}
+
+.card-palestrante strong {
+  color: #dce9f7;
+}
+
+
+/* =========================
+   NENHUM RESULTADO
+========================= */
+
+.nenhum-resultado {
+  text-align: center;
+
+  margin-top: 40px;
+
+  color: #777c83;
+
+  font-size: 18px;
+}
+
+
+/* =========================
+   CELULAR
+========================= */
+
+@media (max-width: 600px) {
+
+  .pagina-palestrantes {
+    padding: 30px 15px;
+  }
+
+  .pagina-palestrantes h1 {
+    font-size: 32px;
+  }
+
+  .grid-palestrantes {
+    grid-template-columns: 1fr;
+  }
+}
